@@ -19,7 +19,7 @@ jobs:
     - name: "Install and Auth Snyk"
       run: |
         sudo npm install -g snyk
-        sudo snyk auth ${SNYK_TOKEN}
+        snyk auth ${SNYK_TOKEN}
 
     - name: "Install Dependancies"
       run: | 
