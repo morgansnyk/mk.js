@@ -7,7 +7,9 @@ on:
 jobs:
   pipeline-job:
     name: "Snyk SCA Test"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
+    env: 
+      SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
 
     steps: 
