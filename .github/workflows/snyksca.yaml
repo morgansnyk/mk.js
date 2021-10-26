@@ -14,6 +14,14 @@ jobs:
     - name: "Checkout Code"
       uses: actions/checkout@v1
 
-    - name: "PWD"
+    - name: "Install and Auth Snyk"
       run: |
-        pwd
+        sudo npm install -g snyk
+        sudo snyk auth ${SNYK_TOKEN}
+
+    - name: "Install Dependancies"
+      run: | 
+        npm i server/
+    - name: "Run Snyk Test"
+      run: |
+        snyk test --severity-threshold=high --all-projects 
