@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "mk.js-server": "file:server"
+  }
+}

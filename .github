@@ -1,0 +1,19 @@
+name: “Snyk SCA Test”
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  pipeline-job:
+    name: "Snyk SCA Test"
+    runs-on: ubuntu-latest
+
+
+    steps: 
+    - name: "Checkout Code"
+      uses: actions/checkout@v1
+
+    - name: "PWD"
+      run: |
+        pwd
