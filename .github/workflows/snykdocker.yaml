@@ -1,4 +1,4 @@
-name: “Snyk SCA Test”
+name: “Snyk Container Test”
 on:
   push:
     branches:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   pipeline-job:
-    name: "Snyk Container Test"
+    name: "Snyk SCA Test"
     runs-on: ubuntu-latest 
     env: 
       SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
