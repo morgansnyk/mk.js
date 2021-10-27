@@ -24,10 +24,10 @@ jobs:
     - name: "Install Dependancies"
       run: | 
         npm i server/
-    - name: "Run Snyk Test"
-      run: |
-        # snyk test --severity-threshold=critical --all-projects 
-        snyk test --ignore-policy --all-projects 
+    # - name: "Run Snyk Test"
+    #   run: |
+    #     # snyk test --severity-threshold=critical --all-projects 
+    #     snyk test --ignore-policy --all-projects 
 
     - name: "Run Snyk Container Test"
       run: |
