@@ -23,11 +23,12 @@ jobs:
 
     - name: "Install Dependancies"
       run: | 
-        npm i server/
+        npm i server/snyk
     - name: "Run Snyk Test"
       run: |
-        snyk test --severity-threshold=high --all-projects 
+        # snyk test --severity-threshold=critical --all-projects 
+        snyk test --ignore-policy
 
     - name: "Run Snyk Container Test"
       run: |
-        snyk container test mk --severity-threshold=high --all-projects 
+        snyk container test mk --severity-threshold=critical --all-projects 
