@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "mk.js-server": "file:server"
+  },
+  "scripts": {
+    "start": "node server/server.js"
   }
 }
