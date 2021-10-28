@@ -49,10 +49,18 @@ jobs:
       run: |
         docker build -t morgansnyk/mk .
 
-    - name: "docker run"
+    - name: "docker compose up"
       run: |
-        docker run morgansnyk/mk -d 
-        docker stop mk
+        docker-compose up -d
+
+    - name: "Sleep for 30 seconds"
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '30s'
+    
+    -name: "docker down"
+      run: | 
+        docker-compose down
 
     - name: "docker push"
       run: |
