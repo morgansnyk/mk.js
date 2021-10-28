@@ -30,14 +30,14 @@ jobs:
       run: |
         snyk test  --all-projects 
 
-    - name: "build image"
-      run: |
-        docker build -t mk .   
+    # - name: "build image"
+    #   run: |
+    #     docker build -t mk .   
 
-    - name: "Run Snyk Container Test"
-      continue-on-error: true
-      run: |
-        snyk container test mk 
+    # - name: "Run Snyk Container Test"
+    #   continue-on-error: true
+    #   run: |
+    #     snyk container test mk 
      
     - name: "logon to Docker"
       run: | 
