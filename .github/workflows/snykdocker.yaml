@@ -41,5 +41,8 @@ jobs:
     - name: "docker hub create image"
      run: |
      docker build -t morgansnyk/mk .
-     docker run morgansnyk/mk 
-     docker push morgansnyk/mk
+    - name: "docker run"
+    run:      docker run morgansnyk/mk 
+     
+    - name: "docker push"
+    run: docker push morgansnyk/mk
