@@ -36,4 +36,4 @@ jobs:
     - name: "Run Snyk Container Test"
       run: |
         # snyk container test mk --severity-threshold=critical --all-projects 
-        snyk container test --ignore-policy
+        snyk container test mk --ignore-policy
