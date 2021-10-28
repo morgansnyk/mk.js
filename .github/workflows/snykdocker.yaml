@@ -45,7 +45,7 @@ jobs:
     # - name: "docker run"
     #   run: |
     #     docker run morgansnyk/mk 
-    # made docker public
+    # made updated docker reg
     - name: "docker push"
       run: |
         docker push morgansnyk/mk
