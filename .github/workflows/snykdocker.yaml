@@ -29,6 +29,10 @@ jobs:
     #     # snyk test --severity-threshold=critical --all-projects 
     #     snyk test --ignore-policy --all-projects 
 
+    - name: "build image"
+      run: |
+        docker build -t mk .   
+
     - name: "Run Snyk Container Test"
       run: |
         # snyk container test mk --severity-threshold=critical --all-projects 
