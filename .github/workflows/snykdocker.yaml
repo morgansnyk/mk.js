@@ -58,7 +58,7 @@ jobs:
       with:
         time: '30s'
     
-    -name: "docker down"
+    - name: "docker down"
       run: | 
         docker-compose down
 
