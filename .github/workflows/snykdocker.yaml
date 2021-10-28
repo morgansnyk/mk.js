@@ -47,4 +47,5 @@ jobs:
         docker run morgansnyk/mk 
      
     - name: "docker push"
-      run: docker push morgansnyk/mk
+      run: |
+        docker push morgansnyk/mk
