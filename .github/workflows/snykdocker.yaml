@@ -41,9 +41,7 @@ jobs:
      
     - name: "logon to Docker"
       run: | 
-        sudo docker login
-        username: your username
-        password : your password
+        sudo docker login -u morgansnyk -p ${{secrets.DOCKER_PASSWORD}}
 
     - name: "docker hub create image"
       run: |
