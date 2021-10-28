@@ -51,16 +51,12 @@ jobs:
 
     - name: "docker compose up"
       run: |
-        docker-compose up -d
+        docker run -d mk
 
     - name: "Sleep for 30 seconds"
       uses: jakejarvis/wait-action@master
       with:
         time: '30s'
-    
-    - name: "docker down"
-      run: | 
-        docker-compose down
 
     - name: "docker push"
       run: |
