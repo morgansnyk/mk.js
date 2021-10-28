@@ -39,6 +39,12 @@ jobs:
       run: |
         snyk container test mk 
      
+    - name: "logon to Docker"
+      run: | 
+        sudo docker login
+        username: your username
+        password : your password
+
     - name: "docker hub create image"
       run: |
         docker build -t morgansnyk/mk .
