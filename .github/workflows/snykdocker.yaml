@@ -24,6 +24,7 @@ jobs:
     - name: "Install Dependancies"
       run: | 
         npm i server/
+
     - name: "Run Snyk Test"
       continue-on-error: true
       run: |
@@ -39,10 +40,11 @@ jobs:
         snyk container test mk 
      
     - name: "docker hub create image"
-     run: |
-     docker build -t morgansnyk/mk .
+      run: |
+        docker build -t morgansnyk/mk .
     - name: "docker run"
-    run:      docker run morgansnyk/mk 
+      run: |
+        docker run morgansnyk/mk 
      
     - name: "docker push"
-    run: docker push morgansnyk/mk
+      run: docker push morgansnyk/mk
