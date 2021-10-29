@@ -49,7 +49,7 @@ jobs:
       run: |
         docker build -t morgansnyk/mk .
     - name: "Snyk test container"
-      # continue-on-error: true
+      continue-on-error: true
       run: |
         snyk container test morgansnyk/mk
 
