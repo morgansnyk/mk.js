@@ -48,15 +48,10 @@ jobs:
     - name: "docker hub create image"
       run: |
         docker build -t morgansnyk/mk .
-
-    - name: "docker compose up"
+    - name: "Snyk test container"
+      # continue-on-error: true
       run: |
-        docker run -d mk
-
-    - name: "Sleep for 30 seconds"
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '30s'
+        snyk container test morgansnyk/mk
 
     - name: "docker push"
       run: |
