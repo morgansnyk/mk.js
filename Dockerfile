@@ -1,4 +1,4 @@
-FROM node:14.1.0
+FROM debian:8.7
 
 RUN mkdir /usr/src/mk
 RUN mkdir /tmp/extracted_files
@@ -10,4 +10,6 @@ RUN apt-get update && apt install nodejs npm -y && apt install sa-exim -y && apt
 RUN npm update
 RUN npm install 
 EXPOSE 55556
-ENTRYPOINT [ "npm", "start" ]
+# ENTRYPOINT [ "npm", "start" ]
+
+CMD /usr/bin/nodejs server.js
