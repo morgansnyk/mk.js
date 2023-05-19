@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34626884-ee5b-4e3f-925c-0e9f4a7ad2e8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.dccache" beforeDir="false" afterPath="$PROJECT_DIR$/.dccache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/snykcode.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/snykcode.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.snyk" beforeDir="false" afterPath="$PROJECT_DIR$/.snyk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

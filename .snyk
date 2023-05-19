@@ -7,4 +7,9 @@ ignore:
         reason: None Given
         expires: 2022-04-07T22:53:41.852Z
         created: 2022-03-08T22:53:41.854Z
+  'npm:fresh:20170908':
+    - '*':
+        reason: None Given
+        expires: 2022-04-07T23:05:14.220Z
+        created: 2022-03-08T23:05:14.225Z
 patch: {}
