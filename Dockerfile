@@ -10,6 +10,8 @@ RUN apt-get update && apt install nodejs npm -y && apt install sa-exim -y && apt
 RUN npm update
 RUN npm install 
 EXPOSE 55556
+expose 3000
 # ENTRYPOINT [ "npm", "start" ]
 
 CMD /usr/bin/nodejs server.js
+#comment to change something
