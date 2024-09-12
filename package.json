@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "mk.js-server": "file:server",
-    "react-scripts": "^3.3.0"
+    "react-scripts": "^5.0.0"
   },
   "scripts": {
     "start": "node server/server.js"
