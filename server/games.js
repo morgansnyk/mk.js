@@ -27,6 +27,10 @@ Game.prototype.addPlayer = function (p) {
   }
   return true;
 };
+Game.prototype.namePlayer = function () {
+  const userProfile = "Welcome, " + username + "!"; 
+  document.getElementById("profile").innerHTML = userProfile; 
+} 
 
 Game.prototype._addHandlers = function () {
   var p1 = this._players[0],
